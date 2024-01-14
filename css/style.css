@@ -58,8 +58,15 @@ header {
     justify-content: center;
     color: black;
     font-weight: 600;
+    cursor: pointer;
 }
 
-.cell.clicked {
+#grid .cell.clicked {
+    cursor: not-allowed;
     background-color: #0a2351;
+}
+
+#grid .cell.clicked.bomb {
+    cursor: not-allowed;
+    background-color: red;
 }
